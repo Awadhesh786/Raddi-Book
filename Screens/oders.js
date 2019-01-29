@@ -2,18 +2,11 @@ import React, { Component } from "react";
 import {
   View,
   StyleSheet,
-  Image,
-  TouchableOpacity,
-  StatusBar
-} from "react-native";
-import { Container,Thumbnail, Text, Content, Icon, Badge } from "native-base";
+  TouchableOpacity
+  } from "react-native";
+import { Thumbnail, Text, Icon, } from "native-base";
 import Colors from "../components/colors";
-import { Rating } from "react-native-elements";
 import colors from "../components/colors";
-
-import Delivered from "../components/orders_components/delivered";
-import Canceled from "../components/orders_components/cancled";
-import Refund from "../components/orders_components/refund";
 import NoOder from "../components/orders_components/noOrder";
 
 export default class orders extends Component {

@@ -1,20 +1,9 @@
 import React, { Component } from "react";
 import {
-  View,
   Text,
-  ScrollView,
-  StyleSheet,
-  Image,
-  TouchableOpacity,
-  TextInput
+  StyleSheet
 } from "react-native";
 import {
-  Card,
-  CardItem,
-  Body,
-  Left,
-  Right,
-  Thumbnail,
   Item,
   Icon,
   Input,
@@ -36,20 +25,6 @@ export default class product extends Component {
   render() {
     return (
       <Container>
-        {/* <TouchableOpacity
-          style={{
-            backgroundColor: Colors.white,
-            width: "100%",
-            height: 60,
-            elevation: 1,
-            borderRadius: 3
-          }}
-        >
-          <TextInput
-            placeholder="Enter Product Name"
-            style={{ alignSelf: "flex-start", top: 5, padding: 15 }}
-          />
-        </TouchableOpacity> */}
         <Header searchBar rounded style={{ backgroundColor: Colors.sky }}>
           <Item>
             <Icon name="ios-search" />

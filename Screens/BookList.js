@@ -8,7 +8,7 @@ import {
     ScrollView,
     ToastAndroid
 } from "react-native";
-import { Grid, Col, Row, Thumbnail, Icon } from "native-base";
+import { Thumbnail, Icon } from "native-base";
 import colors from "../components/colors";
 export default class BookList extends Component {
   render() {
@@ -19,12 +19,15 @@ export default class BookList extends Component {
                 <TouchableOpacity
                 
                 onPress={()=> ToastAndroid.show("HEY", ToastAndroid.SHORT)}
+               // onPress={() => this.props.navigation.navigate("Search")}
                 >
                 <View style={{flexDirection:'row',borderBottomColor: 'black', borderBottomWidth : 1.5}}>
                     <Thumbnail small 
                     style={{marginBottom:6, marginLeft:25}}
                     source={require("../Images/user3.jpg")} />
-                    <Text style={styles.userName}>Awadhesh Chaurasia</Text>
+                    <Text
+                    onPress={() => this.props.navigation.navigate("Search")}
+                    style={styles.userName}>Awadhesh Chaurasia</Text>
                 </View>
 
                 <View style={{flexDirection: 'row', marginTop:10}}>
@@ -61,12 +64,16 @@ export default class BookList extends Component {
                 </TouchableOpacity>
             </View>
         
-            <View style={styles.card}>
+            <View style={styles.card} >
                 <View style={{flexDirection:'row',borderBottomColor: 'black', borderBottomWidth : 1.5}}>
                     <Thumbnail small 
                     style={{marginBottom:6, marginLeft:25}}
                     source={require("../Images/user3.jpg")} />
-                    <Text style={styles.userName}>Ray Sk</Text>
+                    <Text style={styles.userName}
+                    style={{marginBottom:6, marginLeft:25}}
+                    onPress={() => this.props.navigation.navigate("Cart")}
+                    
+                    >Ray Sk</Text>
                 </View>
 
                 <View style={{flexDirection: 'row', marginTop:10}}>
@@ -118,7 +125,8 @@ export default class BookList extends Component {
                 <Text style={styles.price}>Rs. 310</Text>
                 </View>
                 <View >
-                <Text style={styles.bookName}>General Knowledge </Text>
+                <Text style={styles.bookName}
+                onPress={()=>this.props.navigation.navigate('Cart')}>General Knowledge </Text>
                 <Text style={styles.writer}>Writer : Mukesh Singh</Text>
                 <Text style={{fontWeight:'bold', fontSize:20, marginLeft:80}}>Engineerings</Text>
 
@@ -214,7 +222,7 @@ const styles = StyleSheet.create({
     writer: {
         fontWeight: "normal",
         fontSize: 10,
-        textAlign:"right",
+        //textAlign:'right',
         marginRight: 0,
         alignItems:"baseline",
     }

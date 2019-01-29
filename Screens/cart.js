@@ -21,8 +21,6 @@ import {
   Form,
   Picker
 } from "native-base";
-
-import Rupee from "../components/Symbols";
 import Colors from "../components/colors";
 import colors from "../components/colors";
 
@@ -30,10 +28,10 @@ export default class cart extends Component {
   static navigationOptions = ({ navigation }) => ({
     headerTitle: "Book Post",
     headerStyle: {
-      backgroundColor: Colors.blue,
+      backgroundColor: colors.sky,
       elevation: 0
     },
-    headerTintColor: Colors.white
+    headerTintColor: colors.white
   });
 
   constructor(props) {

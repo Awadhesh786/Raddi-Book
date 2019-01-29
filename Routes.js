@@ -8,17 +8,11 @@ import Cart from "./Screens/cart";
 import Search from "./Screens/search";
 import Profile from "./Screens/profile";
 import Notification from "./Screens/notification";
-import ProductDetails from "./Screens/productDetalis";
-import Categories from "./Screens/categories";
-import ProductList from "./Screens/productList";
-
-
 import Class6 from "./Screens/class6";
 import Class11 from "./Screens/class11";
 import Engineering from "./Screens/engineering";
 import Medical from "./Screens/medical";
 import Other from "./Screens/other";
-
 import BookDetails from './Screens/bookDetails';
 
 const transitionConfig = () => {
@@ -57,9 +51,6 @@ const AppNavigator = createStackNavigator(
     Search: { screen: Search },
     
     Notification: { screen: Notification },
-    ProductDetails: { screen: ProductDetails },
-    Categories: { screen: Categories },
-    ProductList: { screen: ProductList },
 
     Class6 : { screen : Class6},
     Class11 : { screen :Class11},

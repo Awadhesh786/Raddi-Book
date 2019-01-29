@@ -4,6 +4,14 @@ import { List, ListItem, Body } from "native-base";
 import colors from "../components/colors";
 
 export default class categories extends Component {
+  static navigationOptions = ({ navigation }) => ({
+    headerTitle: "Medical",
+    headerStyle: {
+      backgroundColor: colors.sky,
+      elevation: 0
+    },
+    headerTintColor: colors.white
+  });
   render() {
     return (
       <View>

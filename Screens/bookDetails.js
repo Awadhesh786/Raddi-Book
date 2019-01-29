@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, ScrollView,StyleSheet, Button } from "react-native";
-import { Grid, Col, Row, Thumbnail, Icon } from "native-base";
+import { Thumbnail, Icon } from "native-base";
 import colors from "../components/colors";
 import Colors from "../components/colors";
 export default class productList extends Component {

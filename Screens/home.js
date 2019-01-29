@@ -16,10 +16,6 @@ import {
 } from "native-base";
 
 import { View, StatusBar, Image, TouchableOpacity } from "react-native";
-import Recom from "../components/recom";
-import Deals from "../components/deals";
-import S from "../components/s";
-import Products from "../components/products";
 import Color from "../components/colors";
 import BookList from './BookList';
 
@@ -129,10 +125,6 @@ export default class home extends Component {
         <Content>
 
         <BookList/>
-          {/* <Recom />
-          <S />
-          <Deals />
-          <Products /> */}
         </Content>
       </View>
     );
